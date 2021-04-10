@@ -5,52 +5,11 @@
 
 {% block head %}
 <link rel="stylesheet" href="{% static '/css/results.css' %}">
-    <style>
-    hr {
-        border-color: white;
-    }
-
-    .icon-scroll,
-    .icon-scroll:before {
-        position: absolute;
-        left: 50%;
-        top: 90%;
-    }
-
-    .icon-scroll {
-      width: 40px !important;
-      height: 70px;
-      margin-left: -20px;
-      top: 50%;
-      margin-top: -35px;
-      box-shadow: inset 0 0 0 1px #fff;
-      border-radius: 25px;
-    }
-
-    .icon-scroll:before {
-      content: '';
-      width: 8px;
-      height: 8px;
-      background: #fff;
-      margin-left: -4px;
-      top: 8px;
-      border-radius: 4px;
-      animation-duration: 1.5s;
-      animation-iteration-count: infinite;
-      animation-name: scroll;
-    }
-
-    @keyframes scroll {
-        0% {
-            opacity: 1;
-        }
-        100% {
-            opacity: 0;
-            transform: translateY(46px);
-        }
-    }
-
-
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+</style>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <link
@@ -72,12 +31,16 @@
 {% endblock %}
 {% block body %}
     <section class="showcase">
-        <div style="background: rgba(0, 0, 0, .6); padding: 10px; border-radius: 15px; vertical-align: top;">
+        <div style="background: rgba(0, 0, 0, .75); padding: 15px; border-radius: 15px; vertical-align: top;">
             {% for thing1, thing2 in info.items %}
-            <strong><p style="font-size: 25px; font-family: 'Times New Roman'">{{ thing1 }}</p></strong>
-            <p style="font-size: 20px; font-family: 'Palatino Linotype'">{{ thing2 }}</p>
+            <strong><p style="font-size: 25px; font-family: 'Kaushan Script', cursive;">{{ thing1 }}</p></strong>
+            <p style="font-size: 20px; font-family: 'Open Sans Condensed', sans-serif;">{{ thing2 }}</p>
             <hr>
             {% endfor %}
+            <br>
+            <h6><a href="{% url 'home' %}" style="text-decoration: none; color: floralwhite;font-family: 'Open Sans Condensed', sans-serif;"><-- Enter a new VIN --></a></h6>
+            <br>
+            <br>
         </div>
     </section>
 {% endblock %}

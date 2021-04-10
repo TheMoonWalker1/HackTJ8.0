@@ -3,6 +3,9 @@
 {% block title %} Landing {% endblock title %}
 
 {% block head %}
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+</style>
 <link rel="stylesheet" href="{% static '/css/styles.css' %}">
     <style>
     hr {
@@ -75,8 +78,9 @@
 <!--            <video src="http://video2.ignitemotion.com/files/mp4/earthAnimation02.mp4" autoplay muted loop></video>-->
         </div>
         <div class="content">
-            <h1 style="font-family: 'Rajdhani', sans-serif; font-size: 100px;">VIN-tech</h1>
-            <h3 style="font-family: 'Shadows Into Light', cursive;">Thank you for visiting our website, where you can get all the information about your car in an instant!</h3>
+            <h1 style="font-family: 'Rajdhani', sans-serif; font-size: 100px;"><b>VIN-tech</b></h1>
+            <h3 style="font-family: 'Open Sans Condensed', sans-serif;">INFORM YOUR DRIVE</h3>
+            <br><br>
             <a href="{% url 'home' %}" class="btn">Start</a>
         </div>
     </section>

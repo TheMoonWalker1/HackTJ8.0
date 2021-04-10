@@ -17,6 +17,6 @@ class UserRegisterForm(UserCreationForm):
 
 
 class CarForm(forms.Form):
-    vin = forms.CharField(required=True, max_length=17)
+    vin = forms.CharField(label='VIN', required=True, max_length=17)
 
 
