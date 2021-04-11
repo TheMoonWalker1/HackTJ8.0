@@ -44,7 +44,6 @@ def home(request):
             thing = Request(f'https://vpic.nhtsa.dot.gov/api/vehicles/decodevin/{vin}?format=json')
 
             response_body = {d['Variable']: d['Value'].upper() for d in json.loads(urlopen(thing).read())['Results'] if d['Value'] != '0' and d['Value'] != 0 and d['Value'] is not None and d['Value'] != '' and d['Value'] != 'Not Applicable' and d['Variable'] != 'Error Text'}
-            sorted()
             return render(request, 'results.html', {'info': response_body})
         messages.error(request, 'This VIN is invalid. It must be 17 characters long.')
     return render(request, 'home.html', {'form': CarForm()})
