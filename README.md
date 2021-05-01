@@ -1,3 +1,16 @@
+![GitHub language](https://img.shields.io/github/languages/top/TheMoonWalker1/HackTJ8.0?color=FF6663)
+![GitHub language count](https://img.shields.io/github/languages/count/TheMoonWalker1/HackTJ8.0?color=FEB144)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/TheMoonWalker1/HackTJ8.0?color=FAFD7B)
+![GitHub repo size](https://img.shields.io/github/repo-size/TheMoonWalker1/HackTJ8.0?color=9EE09E)
+![GitHub](https://img.shields.io/github/license/TheMoonWalker1/HackTJ8.0?color=9EC1CF)
+![GitHub last commit](https://img.shields.io/github/last-commit/TheMoonWalker1/HackTJ8.0?color=CC99C9)
+
+---
+
+# *UPDATE:* We won a prize! Check out the Devpost [here](https://devpost.com/software/car-calculator-ym9c5e)
+
+---
+
 # I'm ~~cravin'~~ carvin' tech 😉
 
 ## Inspiration
